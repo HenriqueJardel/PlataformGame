@@ -12,8 +12,9 @@ O público-alvo desse jogo são pessoas jovens e crianças, com o objetivo de se
 O jogo possui uma fácil jogabilidade, pois só possui três botões sendo eles: esquerda, direita e cima(pular), toda vez que o jogador termina uma fase é salvo seu melhor tempo
 e seu escore de forma local.
 
-## Framework e Biblioteca
+## Tecnologias utilizadas
 
+- Java
 - libGDX
 - Box2D
 
