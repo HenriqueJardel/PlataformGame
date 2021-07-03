@@ -72,13 +72,13 @@ public class Arvore extends Inimigo{
     @Override
     public void draw(Batch batch) {
         if (estadoAtual == State.PARADO)
-        batch.draw(parado[(int) frames % 18], body.getPosition().x - (6/100f) * 2 ,body.getPosition().y - (6/100f),
+        batch.draw(parado[(int) frames % 18], body.getPosition().x - (6/100f) * 3,body.getPosition().y - (6/100f),
                     (6/100f) * 6 , (6/100f) * 3);
         if (estadoAtual == State.ATACANDO)
-        batch.draw(atacando[(int) frames % 11], body.getPosition().x - (6/100f) * 2 ,body.getPosition().y - (6/100f),
+        batch.draw(atacando[(int) frames % 11], body.getPosition().x - (6/100f) * 3 ,body.getPosition().y - (6/100f),
                 (6/100f) * 6 , (6/100f) * 3);
         if (estadoAtual == State.MORTO)
-            batch.draw(morto, x - (6/100f) * 2 ,y - (6/100f),
+            batch.draw(morto, x - (6/100f) * 3 ,y - (6/100f),
                     (6/100f) * 6 , (6/100f) * 3);
     }
 

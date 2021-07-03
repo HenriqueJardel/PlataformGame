@@ -62,8 +62,8 @@
   <object id="72" x="383" y="90.75" width="11.25" height="7"/>
  </objectgroup>
  <objectgroup name="plataformas-m">
-  <object id="12" x="3515" y="225" width="20" height="8"/>
-  <object id="54" x="372.25" y="210.75" width="20" height="8"/>
+  <object id="12" x="3515" y="225" width="20" height="7"/>
+  <object id="54" x="372.25" y="210.75" width="20" height="7"/>
  </objectgroup>
  <objectgroup name="plataformas-c">
   <object id="9" x="1974.5" y="175.25" width="20" height="7"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="300" height="16" tilewidth="16" tileheight="16" nextobjectid="176">
+<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="300" height="16" tilewidth="16" tileheight="16" nextobjectid="177">
  <tileset firstgid="1" source="fundo-3.tsx"/>
  <tileset firstgid="1401" source="terrain.tsx"/>
  <tileset firstgid="1643" source="start.tsx"/>
@@ -171,14 +171,14 @@
   <object id="175" x="4290.5" y="207.333" width="14" height="11.3333"/>
  </objectgroup>
  <objectgroup name="plataform-m">
-  <object id="23" x="694.333" y="202.667" width="30" height="11.6667"/>
-  <object id="40" x="3010" y="240.5" width="30" height="11.6667"/>
-  <object id="44" x="3170" y="195.833" width="30" height="11.6667"/>
+  <object id="23" x="694.333" y="202.667" width="20" height="7"/>
+  <object id="44" x="3170" y="195.833" width="20" height="7"/>
  </objectgroup>
  <objectgroup name="plataform-c">
-  <object id="41" x="2592.67" y="210.833" width="30" height="11.6667"/>
-  <object id="42" x="2692.67" y="209.167" width="30" height="11.6667"/>
-  <object id="43" x="2789.67" y="209.167" width="30" height="11.6667"/>
+  <object id="41" x="2592.67" y="210.833" width="20" height="7"/>
+  <object id="42" x="2692.67" y="209.167" width="20" height="7"/>
+  <object id="43" x="2789.67" y="209.167" width="20" height="7"/>
+  <object id="176" x="3009.33" y="240.833" width="20" height="7"/>
  </objectgroup>
  <layer name="end" width="300" height="16">
   <data encoding="base64" compression="zlib">

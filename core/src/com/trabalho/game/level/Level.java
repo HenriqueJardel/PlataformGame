@@ -21,7 +21,7 @@ public class Level {
     private OrthogonalTiledMapRenderer render;
     private World world;
     private Box2DWorld box2d;
-    private Sound som;
+    private Sound sound;
 
     private ArrayList<Inimigo> inimigos;
     private ArrayList<Moeda> moedas;
@@ -32,7 +32,7 @@ public class Level {
     public Level(World world) {
         this.world = world;
         this.box2d = new Box2DWorld(world);
-        this.som = new Sound();
+        this.sound = new Sound();
 
         this.map = new TiledMap[10];
         for (int i = 0; i < map.length;i++) {
@@ -50,7 +50,7 @@ public class Level {
     public void init() {
         box2d.createWorld(map[levelAtual]);
         render = new OrthogonalTiledMapRenderer(map[levelAtual],1/100f);
-        this.som.tocarSomCenario(true, levelAtual);
+        this.sound.tocarSomCenario(true, levelAtual);
     }
 
     public void startNewLevel(int levelAtual) {
@@ -71,7 +71,7 @@ public class Level {
 
         box2d.createWorld(map[levelAtual]);
         render.setMap(map[levelAtual]);
-        som.tocarSomCenario(true, levelAtual);
+        sound.tocarSomCenario(true, levelAtual);
     }
 
     public void draw(float posMin, float posMax) {
@@ -144,7 +144,7 @@ public class Level {
     }
 
     public void pararSom() {
-        this.som.tocarSomCenario(false, levelAtual);
+        this.sound.tocarSomCenario(false, levelAtual);
     }
 
     public void setLevelAtual(int level) {

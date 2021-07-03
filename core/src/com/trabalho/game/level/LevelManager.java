@@ -23,7 +23,6 @@ public class LevelManager {
     private WorldScore save;
     private DisplayInfo info;
 
-    private Box2DDebugRenderer debug;
     private boolean emJogo;
     private boolean show;
 
@@ -36,7 +35,6 @@ public class LevelManager {
         this.soundEffects = new SoundEffects();
         this.levelCollision = new LevelCollision(soundEffects);
         this.world.setContactListener(levelCollision);
-        this.debug = new Box2DDebugRenderer();
         this.save = new WorldScore();
         this.info = new DisplayInfo(level.getBatch());
         this.emJogo = false;
@@ -46,12 +44,12 @@ public class LevelManager {
     public void draw() {
         level.getRender().render();
         hud.draw();
+
         if (level.getLevelAtual() == 0 && show == true) {
             info.draw();
         }
-        //debug.render(world,gameCam.combined);
-        level.getBatch().setProjectionMatrix(gameCam.combined);
 
+        level.getBatch().setProjectionMatrix(gameCam.combined);
         level.getBatch().begin();
         player.draw(level.getBatch());
         level.draw(player.body.getPosition().x - (403/100f), player.body.getPosition().x + (403/100f));

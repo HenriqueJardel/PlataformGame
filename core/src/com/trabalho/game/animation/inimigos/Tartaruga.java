@@ -44,7 +44,7 @@ public class Tartaruga extends Inimigo {
     @Override
     public void draw(Batch batch) {
         batch.draw(andando[(int) frames % 14], body.getPosition().x - (6/100f) * 2 ,body.getPosition().y - (5/100f)  ,
-                (6/100f) * 4 , (6/100f) * 3,0,0,andando[(int) frames % 14].getWidth(), andando[(int) frames % 14].getHeight(), esquerda, false);
+                (6/100f) * 3 , (6/100f) * 2,0,0,andando[(int) frames % 14].getWidth(), andando[(int) frames % 14].getHeight(), esquerda, false);
     }
 
     @Override

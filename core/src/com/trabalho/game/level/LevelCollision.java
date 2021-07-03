@@ -14,11 +14,11 @@ import com.trabalho.game.sounds.SoundEffects;
 
 public class LevelCollision implements ContactListener {
 
-    private SoundEffects somEfeitos;
+    private SoundEffects soundEffects;
     private Integer score;
 
-    public LevelCollision(SoundEffects somEfeitos) {
-        this.somEfeitos = somEfeitos;
+    public LevelCollision(SoundEffects soundEffects) {
+        this.soundEffects = soundEffects;
         this.score = 0;
     }
 
@@ -33,7 +33,7 @@ public class LevelCollision implements ContactListener {
             if (c == 130) {
                 ((Inimigo) a.getUserData()).hit();
                 score += 200;
-                somEfeitos.play("pisar");
+                soundEffects.play("pisar");
             }
 
             if (c == 62 && a.getUserData() instanceof Player) {
@@ -46,13 +46,13 @@ public class LevelCollision implements ContactListener {
 
             if (c == 34 && a.getUserData() instanceof Moeda) {
                 ((Moeda) a.getUserData()).hit();
-                somEfeitos.play("moeda");
+                soundEffects.play("moeda");
                 score += 100;
             }
 
             if (c == 34 && b.getUserData() instanceof Moeda) {
                 ((Moeda) b.getUserData()).hit();
-                somEfeitos.play("moeda");
+                soundEffects.play("moeda");
                 score += 100;
             }
 
