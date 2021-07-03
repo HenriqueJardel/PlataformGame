@@ -5,7 +5,7 @@ Aluno: Henrique Jardel Timoteo
 
 PlataformGame é um jogo de rolagem lateral baseado em games como super mario e magic rampage.
 
-A aplicação consiste é um jogo indie de rolagem lateral que não possui game over, na qual o jogador pode desafiar diversas vezes todas as fases que o game possui.
+A aplicação consiste em um jogo de rolagem lateral que não possui game over, na qual o jogador pode desafiar diversas vezes todas as fases que o game possui.
 
 O público-alvo desse jogo são pessoas jovens e crianças, com o objetivo de ser um jogo para entretenimento.
 
